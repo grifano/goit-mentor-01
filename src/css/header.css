@@ -1,21 +1,73 @@
+/* Header */
 .header {
-  padding: 20px 0;
+  padding: 22px 15px;
+  box-shadow: 0px 4px 10px var(--header-shadow);
 }
-
-.nav-list {
+.nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 16px;
 }
-
+.header-logo {
+}
+.nav-list {
+  display: flex;
+  gap: 24px;
+}
+.nav-item {
+}
 .nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  line-height: 1.75;
+  color: var(--text-color-dark);
 }
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.header-buttons-wrap {
+  display: flex;
+  gap: 25px;
+}
+.header-button {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  border: 1px solid var(--ui-color-green);
+  border-radius: 4px;
+  background-color: transparent;
+  font-weight: 600;
+}
+.is-login {
+  color: var(--text-color-dark);
+}
+.is-signup {
+  color: var(--text-color-light);
+  background-color: var(--ui-color-green);
+}
+.visually-hidden {
+}
+.header-switcher {
+  background: rgba(2, 137, 122, 0.3);
+  border: 2px solid var(--ui-color-green);
+  border-radius: 100px;
+  width: 100px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+}
+.header-switcher-radio {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  &[value='dark'] {
+    background: url('/img/dark.svg') center center;
+  }
+  &[value='auto'] {
+    background: url('/img/auto.svg') center center;
+  }
+  &[value='light'] {
+    background: url('/img/light.svg') center center;
+  }
+  &:checked {
+    filter: invert(1);
+  }
 }

@@ -1,0 +1,15 @@
+.section-clients {
+  padding: 100px 0;
+}
+.clients-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+}
+.clients-list-item {
+}
